@@ -1,0 +1,330 @@
+/* BANNER */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/banner/banner-m.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center bottom;
+  color: #FFF;
+}
+
+.banner-text {
+  width: 580px;
+  max-width: 84%;
+  margin: 0 auto;
+  padding-top: 200px;
+  text-shadow: 0 4px 4px rgba(0,0,0,0.2);
+}
+
+.banner-title {
+  font-weight: 600;
+  font-size: 1.3125rem;
+  margin-bottom: 1rem;
+}
+
+.banner-sub-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* PRODUCT */
+.product-box {
+  padding: 80px 16px;
+}
+
+.product-items {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.product-item {
+  max-width: 320px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 1.875rem;
+}
+
+.product-text {
+  padding: 1rem 0.2rem;
+}
+
+.product-title {
+  color: #4D4D4D;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+.product-price {
+  color: #0095A5;
+  font-size: 1.3125rem;
+  font-weight: 700;
+}
+
+/* PROMOTION */
+.promotion-box {
+  padding: 80px 16px;
+}
+
+.promotion-items {
+  color: #FFF;
+  font-weight: 700;
+}
+
+.promotion-item {
+  background-size: cover;
+  width: 100%;
+  max-width: 390px;
+  height: 480px;
+  margin: 0 auto 1.875rem;
+}
+
+.promotion-left {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.promotion-right {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+.promotion-item.promotion1 {
+  background-image: url('../images/promotions/promotion1-m.jpg');
+}
+
+.promotion-left-text {
+  padding: 60px 0 0 40px;
+}
+
+.promotion-item.promotion2 {
+  background-image: url('../images/promotions/promotion2-m.jpg');
+}
+
+.promotion-right1-text {
+  padding: 40px 0 0 40px;
+}
+
+.promotion-item.promotion3 {
+  background-image: url('../images/promotions/promotion3-m.jpg');
+}
+
+.promotion-right2-text {
+  padding: 40px 0 0 40px;
+}
+
+/* CONTACT US */
+.contact-box {
+  padding: 80px 16px;
+  background-color: #F9F9F9;
+}
+
+.contact-items {
+  line-height: 1.5;
+}
+
+.map {
+  width: 100%;
+  height: 186px;
+}
+
+.contact-name {
+  color: #0095A5;
+  margin: 1rem 0;
+  font-size: 1.25rem;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin: 1.4rem 0;
+  font-size: 1rem;
+}
+
+.contact-label {
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  display: none;
+}
+
+.contact-icon {
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-links li {
+  background-color: #AFAFAF;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 34px;
+}
+
+.social-links li:hover {
+  background-color: #0095A5;
+}
+
+.social-links a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 720px;
+    background-position: 0 bottom;
+    background-image: url('../images/banner/banner.jpg');
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+  }
+
+  .banner-sub-title {
+    font-size: 1.5rem;
+  }
+
+  .product-items {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .promotion-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .promotion-item {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .promotion-left {
+    width: 49%;
+  }
+
+  .promotion-right {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    width: 49%;
+  }
+
+  .promotion-item.promotion1 {
+    background-image: url('../images/promotions/promotion1.jpg');
+    height: 676px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .promotion-left-text {
+    padding: 180px 40px 0 0;
+  }
+
+  .promotion-item.promotion2 {
+    background-image: url('../images/promotions/promotion2.jpg');
+    height: 320px;
+    display: flex;
+    align-items: center;
+  }
+
+  .promotion-right1-text {
+    padding-left: 40px;
+  }
+
+  .promotion-item.promotion3 {
+    background-image: url('../images/promotions/promotion3.jpg');
+    height: 320px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .promotion-right2-text {
+    padding-right: 40px;
+  }
+
+  .contact-items {
+    display: flex;
+  }
+
+  .map {
+    width: 48%;
+    height: 354px;
+    margin-right: 48px;
+    flex-shrink: 0;
+  }
+
+  .contact-name {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    font-size: 1.25rem;
+    align-items: flex-start;
+  }
+
+  .contact-label {
+    display: block;
+    padding-right: 10px;
+    width: 100px;
+  }
+
+  .contact-icon {
+    display: none;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .product-title {
+    font-size: 1.5rem;
+  }
+
+  .product-desc {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 1.5rem;
+  }
+
+  .promotion-left {
+    font-size: 2.5rem;
+    line-height: 3.6rem;
+  }
+
+  .promotion-right {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}

@@ -1,1 +1,118 @@
+.header {
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
 
+.logo {
+  padding: 16px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.logo-name {
+  display: none;
+}
+
+.bar {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  padding: 16px;
+  background-color: transparent;
+  border: 0;
+}
+
+.menu {
+  background-color: #0095A5;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu a {
+  display: block;
+  margin: 0;
+  background-color: #FFF;
+  border-bottom: 2px dashed #E9E9E9;
+  color: #4D4D4D;
+  padding: 2rem;
+}
+
+.menu a:hover {
+  background-color: #E9E9E9;
+}
+
+footer {
+  font-size: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 36px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin-right: 16px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .menu a {
+    margin: 0 20px;
+    color: #FFF;
+    background-color: transparent;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .menu a:hover {
+    text-shadow: 0 0 16px rgba(0,0,0,0.5);
+    background-color: transparent;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo img {
+    width: 154px;
+  }
+
+  .menu {
+    font-size: 1.3125rem;
+    margin-right: 40px;
+  }
+
+  .menu a {
+    margin: 0 44px;
+  }
+}
