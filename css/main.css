@@ -153,7 +153,7 @@
 
 /* CONTACT US */
 .contact-box {
-  padding: 80px 16px;
+  padding: 50px 16px 24px;
   background-color: #F9F9F9;
 }
 
@@ -204,7 +204,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 34px;
+  margin: 0 17px;
 }
 
 .social-links li:hover {
@@ -303,6 +303,10 @@
 
   .promotion-right2-text {
     padding-right: 40px;
+  }
+
+  .contact-box {
+    padding: 80px 16px;
   }
 
   .contact-items {
