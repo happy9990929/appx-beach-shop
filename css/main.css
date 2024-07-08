@@ -86,7 +86,11 @@
 
 /* PROMOTION */
 .promotion-box {
-  padding: 80px 16px;
+  padding: 0 0 20px;
+}
+
+.section-text-promotion {
+  padding: 0 16px;
 }
 
 .promotion-items {
@@ -95,6 +99,7 @@
 
 .promotion-items a {
   color: #FFF;
+  display: block;
 }
 
 .promotion-items a:hover {
