@@ -60,10 +60,13 @@
 }
 
 .product-title {
-  color: #4D4D4D;
   font-size: 1.3125rem;
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+.product-title a {
+  color: #4D4D4D;
 }
 
 .product-title a:hover {
