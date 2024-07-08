@@ -30,7 +30,7 @@
 
 /* PRODUCT */
 .product-box {
-  padding: 80px 16px;
+  padding: 80px 16px 0;
 }
 
 .product-items {
@@ -86,7 +86,7 @@
 
 /* PROMOTION */
 .promotion-box {
-  padding: 0 0 20px;
+  padding: 80px 0 20px;
 }
 
 .section-text-promotion {
