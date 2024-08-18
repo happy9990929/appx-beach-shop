@@ -29,10 +29,15 @@ input::placeholder {
   color: #AAA;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #757575;
   font-size: 14px;
+  transition: all .4s ease;
 }
 
 .max-container {
