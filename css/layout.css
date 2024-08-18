@@ -1,13 +1,9 @@
 .header {
   position: absolute;
   max-width: 1920px;
-  width: 100%;
   margin: 0 auto;
   left: 0;
   right: 0;
-}
-
-.logo {
   padding: 16px;
 }
 
@@ -26,6 +22,15 @@
   padding: 16px;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 70px;
 }
 
 .menu {
@@ -33,7 +38,6 @@
   font-weight: 400;
   text-align: center;
   padding: 10px 0;
-  display: none;
 }
 
 .menu a {
@@ -49,10 +53,88 @@
   background-color: #E9E9E9;
 }
 
+/* FOOTER */
 footer {
-  font-size: 1rem;
-  padding: 2rem;
+  font-size: 0.875rem;
+  padding: 46px 16px;
   text-align: center;
+}
+
+.footer-desc {
+  max-width: 614px;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #757575;
+  margin-top: 20px;
+  line-height: 2.25rem;
+}
+
+.footer-form {
+  max-width: 520px;
+  height: 52px;
+  margin: 46px auto;
+  position: relative;
+}
+
+.footer-form input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  border: 1px #AAA solid;
+}
+
+.footer-form button {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #AAA;
+  transition: background-color .2s ease;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-form button:hover {
+  background-color: #4D4D4D;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.social-links li {
+  background-color: #AFAFAF;
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 17px;
+}
+
+.social-links li:hover {
+  background-color: #0095A5;
+}
+
+.social-links a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,10 +142,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .logo {
-    padding: 36px;
+    padding: 20px;
   }
 
   .logo img {
@@ -74,8 +153,13 @@ footer {
     display: none;
   }
 
+  .nav {
+    display: block;
+    position: initial;
+  }
+
   .menu {
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
@@ -99,7 +183,22 @@ footer {
   }
 
   footer {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    padding: 90px 16px;
+  }
+
+  .footer-form {
+    height: 60px;
+    margin: 50px auto;
+  }
+
+  .footer-form button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social-links {
+    margin-bottom: 50px;
   }
 }
 
@@ -110,7 +209,6 @@ footer {
 
   .menu {
     font-size: 1.3125rem;
-    margin-right: 40px;
   }
 
   .menu a {

@@ -6,6 +6,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #4D4D4D;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -20,9 +21,18 @@ address {
   font-style: normal;
 }
 
+input:focus-visible {
+  outline: 0;
+}
+
+input::placeholder {
+  color: #AAA;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #757575;
+  font-size: 14px;
 }
 
 .max-container {
@@ -76,6 +86,6 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
