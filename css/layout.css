@@ -44,13 +44,17 @@
   display: block;
   margin: 0;
   background-color: #FFF;
-  border-bottom: 2px dashed #E9E9E9;
+  border-bottom: 2px dotted #E9E9E9;
   color: #4D4D4D;
   padding: 2rem;
 }
 
 .menu a:hover {
   background-color: #E9E9E9;
+}
+
+.menu li:last-child a {
+  border-bottom: 0;
 }
 
 /* FOOTER */
@@ -62,12 +66,12 @@ footer {
 
 .footer-desc {
   max-width: 614px;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   text-align: center;
   margin: 0 auto;
   color: #757575;
   margin-top: 20px;
-  line-height: 2.25rem;
+  line-height: 1.25rem;
 }
 
 .footer-form {
@@ -190,6 +194,11 @@ footer {
   .footer-form {
     height: 60px;
     margin: 50px auto;
+  }
+
+  .footer-desc {
+    font-size: 1.25rem;
+    line-height: 2.25rem;
   }
 
   .footer-form button {
