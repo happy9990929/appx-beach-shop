@@ -142,10 +142,13 @@ footer {
   justify-content: center;
 }
 
+.go-top-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .go-top {
-  position: absolute;
-  bottom: 40px;
-  right: 0;
   width: 40px;
   height: 40px;
   background: #0095A5;
@@ -202,7 +205,7 @@ footer {
 
   footer {
     font-size: 1rem;
-    padding: 90px 16px;
+    padding: 90px 16px 40px;
   }
 
   .footer-form {
@@ -226,6 +229,20 @@ footer {
 
   .social-links {
     margin-bottom: 50px;
+  }
+
+  .footer-copyright {
+    letter-spacing: 2px;
+  }
+
+  .go-top-box {
+    margin-top: 0;
+  }
+
+  .go-top {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
   }
 }
 
